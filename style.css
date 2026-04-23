@@ -1,0 +1,330 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+#nav-headings{
+    margin-left: 90px;
+    padding-left: 70px;
+}
+/* 
+.img-carousel img{
+filter: blur(2.5px);    
+}
+
+.img-carousel h2{
+    padding-bottom:190px;
+    color: black;
+    font-size: 70px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+
+.img-carousel {
+  position: relative;
+}
+
+.img-carousel img {
+  height: 70vh;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+/* Dark overlay */
+.img-carousel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85) 30%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+
+/* Center content */
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  z-index: 2;
+}
+
+/* Heading style */
+.carousel-caption h2 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  /* Glow effect */
+  text-shadow: 
+    0 0 5px #a855f7,
+    0 0 10px #a855f7,
+    0 0 20px #311069,
+    0 0 40px #111113;
+}
+
+/* Paragraph style */
+.carousel-caption p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5e7eb;
+  max-width: 700px;
+  margin: 20px auto 0;
+  line-height: 1.6;
+}
+
+
+
+/* ABout us */
+.about-sec {
+  padding: 100px 10%;
+  color: #fff;
+  text-align: center;
+}
+
+/* Heading */
+.about-sec h2 {
+  /* font-family:Georgia, 'Times New Roman', Times, serif;  
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative; */
+text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Paragraph */
+.about-sec p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 30px auto 0;
+  line-height: 1.8;
+  color: #cbd5f5;
+
+}
+
+
+/* Cards */
+
+
+.services{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px 10%;
+}
+
+/* Card styling */
+.cards .card {
+  flex: 1;
+  max-width: 300px;   /* makes cards smaller */
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #1e293b;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+/* Equal image size */
+.cards .card img {
+  width: 100%;
+  height: 180px;        /* same height for all images */
+  object-fit: cover;    /* prevents stretching */
+}
+
+/* Card body */
+.cards .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.cards .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.cards .card-text {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+/* Hover effect */
+.cards .card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+
+
+
+/* Section styling */
+.contact-sec {
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+/* Heading */
+.contact-sec h2 {
+  /* font-family:Georgia, 'Times New Roman', Times, serif ;  
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px; */
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Input fields */
+.contact-sec input {
+  display: block;
+  width: 300px;
+  margin: 35px auto;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+
+  background: #1e293b;
+  color: #fff;
+
+  transition: 0.3s ease;
+}
+
+#email {
+    width: 70%;
+    height: 200px;
+      padding: 12px 16px;
+      border-radius: 6px;
+      border: 1px solid #2e3d55;
+      background-color: #243044;
+      color: white;
+      font-size: 1rem;
+      outline: none;
+}
+
+
+/* Placeholder color */
+.contact-sec input::placeholder {
+  color: #94a3b8;
+}
+
+/* Focus effect */
+.contact-sec input:focus {
+  border: 1px solid #a855f7;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+}
+
+/* Optional button */
+.contact-sec button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  background: #a855f7;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-sec button:hover {
+  background: #7c3aed;
+  box-shadow: 0 0 15px #a855f7;
+}
+
+
+
+
+
+.footer-sec {
+  background: #0f172a;
+  color: white;
+  padding-top: 50px;
+}
+
+/* Social icons */
+.footer-social {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+/* 
+/* Layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 10%;
+}
+
+/* Boxes */
+.footer-box {
+  flex: 1;
+  min-width: 220px;
+  margin-bottom: 30px;
+}
+
+/* Headings */
+.footer-box h3,
+.footer-box h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+
+  /* Glow */
+  /* text-shadow: 0 0 5px white; */
+}
+
+/* Links */
+.footer-box a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 8px 0;
+  transition: 0.3s ease;
+}
+
+.footer-box a:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+  color: white;
+  font-size: 14px;
+}
